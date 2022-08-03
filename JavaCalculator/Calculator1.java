@@ -11,34 +11,34 @@ public class Calculator1 {
             System.out.println("4. Division (/)");
             System.out.println("5. Modulus (%)");
             System.out.print("6. Exit");
-            int person = sc.nextInt();
+            int number = sc.nextInt();
             int result;
-            if (person == 6) {
+            if (number == 6) {
                 System.out.println("Finish");
                 break;
             }
-            if (person == 1) {
+            if (number == 1) {
                 System.out.println("Insert your first number, please");
                 int a = sc.nextInt();
                 System.out.println("Insert your second number, please");
                 int b = sc.nextInt();
                 result = a + b;
                 System.out.println("Your result is:" + result);}
-            if (person == 2) {
+            if (number == 2) {
                 System.out.println("Insert your first number, please");
                 int a = sc.nextInt();
                 System.out.println("Insert your second number, please");
                 int b = sc.nextInt();
                 result = a - b;
                 System.out.println("Your result is:" + result);}
-            if (person == 3) {
+            if (number == 3) {
                 System.out.println("Insert your first number, please");
                 int a = sc.nextInt();
                 System.out.println("Insert your second number, please");
                 int b = sc.nextInt();
                 result = a * b;
                 System.out.println("Your result is:" + result);}
-            if (person == 4) {
+            if (number == 4) {
                 System.out.println("Insert your first number, please");
                 int a = sc.nextInt();
                 System.out.println("Insert your second number, please");
@@ -46,12 +46,12 @@ public class Calculator1 {
                 if (b == 0){System.out.println("You cann't divide on 0"); }
                 result = a / b;
                 System.out.println("Your result is:" + result);}
-            if (person == 5) {
+            if (number == 5) {
                 System.out.println("Insert your number, please");
                 int c = sc.nextInt();
                 result = (c%2);
                 System.out.println("Your result is:" + result);}
-            if (!(person == 1 || person == 2 || person == 3 || person == 4 || person == 5 ||person == 6)) {
+            if (!(number == 1 || number == 2 || number == 3 || number == 4 || number == 5 || number == 6)) {
                 System.out.println("There is no such operation");}
     }
 } }
